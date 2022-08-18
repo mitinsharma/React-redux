@@ -6,4 +6,4 @@ In the project directory, you can run:
 
 ## Add Redux
 
-### `yarn add react-redux`
+### `yarn add react-redux @reduxjs/tookit`

@@ -17,7 +17,7 @@ function App() {
       <div className='addUser'>
         <input type="text" placeholder='Name..' onChange={(event) => { setName(event.target.value) }}/>
         <input type="text" placeholder='Username..' onChange={(event) => { setUsername(event.target.value) }}/>
-        <button onClick={() => { dispatch(addUser({id: usersList[usersList.length - 1].id + 1, name, username}))}}>Add User</button>
+        <button onClick={() => { dispatch(addUser({id: (usersList.length === 0) ? 0 : usersList[usersList.length - 1].id + 1, name, username}))}}>Add User</button>
       </div>
       <div className='displayUsers'>
         {usersList.map((user) => {
